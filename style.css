@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  margin: auto;
+  padding-bottom: 1em;
+
+  color: hsl(237, 12%, 33%);
+
+  max-width: 375px;
+  width: 90%;
+  min-width: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 15px;
+
+  background: #fff;
+  box-shadow: 0px 3px 5px hsl(237, 12%, 33%);
+  transition: 250ms;
+}
+
+/* .logo_woman {
+  display: block;
+  margin: auto;
+
+  min-width: 240px;
+  margin-bottom: -52px;
+  max-width: 240px;
+  z-index: 1;
+} */
+
+.mobile {
+  display: block;
+}
+
+.desktop {
+  display: none;
+}
+
+/* inside card */
+
+.faq {
+  margin: auto;
+  width: 90%;
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+/* checkbox part */
+
+.accordion_input {
+  margin: 0;
+  height: 1px;
+  display: block;
+  visibility: hidden;
+}
+
+/* accordion wrapper */
+
+.accordion_label {
+  margin: 0.25em;
+  display: block;
+  padding-bottom: 0.75em;
+
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.accordion_question {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion_title {
+  margin: 0.25em 0;
+  cursor: pointer;
+}
+
+.question_arrow {
+  display: inline-block;
+  transition: 250ms;
+}
+
+.accordion_input:checked
+  ~ .accordion_label
+  .accordion_question
+  .question_arrow {
+  transform: rotate(180deg);
+}
+
+.accordion_title:hover,
+.accordion_title:focus,
+.accordion_input:checked ~ .accordion_label .accordion_title {
+  font-weight: 700;
+}
+
+/*****
+ accordion text part 
+ ****/
+
+.accordion_text {
+  display: none;
+  margin: 0.7em auto 0.25em;
+  font-size: 0.9em;
+}
+
+.accordion_input:checked ~ .accordion_label .accordion_text {
+  display: block;
+}
+
+/********
+ media queries
+*******/
+
+@media (min-width: 900px) {
+  .card {
+    max-width: 750px;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .faq {
+    min-width: 50%;
+  }
+
+  .mobile {
+    display: none;
+  }
+  /* .logo {
+    width: 54%;
+  }
+
+  .desktop {
+    display: block;
+    width: 100%;
+  }
+  .pattern_desktop {
+    margin-bottom: -10%;
+    margin-left: -25%;
+  }
+
+  .logo_woman_desktop {
+    width: 95%;
+    margin-bottom: -80%;
+    margin-left: -20%;
+  } */
+}
