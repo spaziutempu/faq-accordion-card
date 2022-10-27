@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/spaziutempu/faq-accordion-card)
-- Live Site URL: [NOT FINISHED](https://your-live-site-url.com)
+- Live Site URL: [https://darling-medovik-8f6dca.netlify.app/](https://darling-medovik-8f6dca.netlify.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-##### with this challenge i learned how to use the checkbox/radio trick to display/hide some text without using javascript,
+##### - with this challenge i learned how to use the checkbox/radio trick to display/hide some text without using javascript,
 
 ```css
 .accordion_input:checked ~ .accordion_label .accordion_text {
@@ -53,7 +53,7 @@ Users should be able to:
 }
 ```
 
-- a little bit more about position: absolute .. but
+- a little bit more about position: absolute
 
 - by the way i got lot of difficulty with logos display, still not finishing to place them correctly yet, it was quite frustrating to don't find the proper way to do it.
 
