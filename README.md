@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-with this challenge i learned how to use the checkbox/radio trick to display/hide some text without using javascript,
+##### with this challenge i learned how to use the checkbox/radio trick to display/hide some text without using javascript,
 
 ```css
 .accordion_input:checked ~ .accordion_label .accordion_text {
@@ -53,11 +53,13 @@ with this challenge i learned how to use the checkbox/radio trick to display/hid
 }
 ```
 
--by the way i got a lot of difficulty with logos display, still not finishing to place them correctly yet, it's quite frustrating to don't find the proper solution...
+- a little bit more about position: absolute .. but
+
+- by the way i got lot of difficulty with logos display, still not finishing to place them correctly yet, it was quite frustrating to don't find the proper way to do it.
 
 ### Continued development
 
-- Need to Fix logos display !!
+- Need to Fix logos display
 
 ### Useful resources
 
